@@ -155,7 +155,15 @@ Maintenant on est prêt pour créer notre objet Helicopter.
  - la hauteur en pixels absolus, aHeight: int
  3. Associez l'image à l'hélicoptère au moment de la création de l'objet, récupérez les dimensions relatives à l'écran sachant que Width = height / 2  et rajoutez-les à l'objet pour les mettre à l'échelle de l'écran à l'aide de cette ligne de code:
  
- > `this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); `
+ ```
+        int aWidth = aHeight / 2;
+
+        int dpHeight = PixelHelper.pixelsToDp(aHeight, context);
+        int dpWidth = PixelHelper.pixelsToDp(aWidth, context);
+
+        this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); 
+        setLayoutParams(params);
+ ```
  
 *NB: Vous pouvez mettre une couleur à votre image, Une idée simple serait d'attribuer des valeurs RGB aléatoires (0 - 255) ou de créer une liste statique des couleurs. Utilisez ce bout de code: *
 
@@ -169,7 +177,7 @@ Maintenant on peut créer des objets Helicopter et les ajouter à l'écran de l'
      mContentView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View view, MotionEvent motionEvent) {
-                    if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                         Helicopter heli = new Helicopter(MainActivity.this,
                                                  Color.argb(255, 255, 0, 0), 
                                                  100);
