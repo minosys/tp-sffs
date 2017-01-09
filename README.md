@@ -443,7 +443,7 @@ Testez votre code à nouveau et essayez de grimper en score.
 ## Audio
 #### Background music
 Les jeux utilisent souvent de la musique en arrière-plan pour améliorer l'expérience de jeu. 
-1. Récupérez les deux fichiers .wav et .mp3. Copiez les, Créez un Android Ressource Directory, choisissez "raw" dans la liste déroulante *Resource Type* et cliquez sur ok. Ensuite faites un clique droit sur votre dossier "raw" et coller les deux fichiers.
+1. Récupérez les deux fichiers .wav et .mp3 de ce lien: https://git.io/vMlYw . Copiez les, Créez un Android Ressource Directory, choisissez "raw" dans la liste déroulante *Resource Type* et cliquez sur ok. Ensuite faites un clique droit sur votre dossier "raw" et coller les deux fichiers.
 2. Créez une nouvelle classe `SoundHelper` dans le package `Utils` et récupérez son contenu de ce lien : https://git.io/vMlvc . 
 3. Rajoutez un objet `private SoundHelper mSoundHelper;` à votre `mainActivity`, initialisez le dans `onCreate`, dites lui de préparer son lecteur de média avec `prepareMusicPlayer()` (La ressource *musique.mp3* est fournie à l'intérieur de cette méthode).
 4. Localisez la méthode `startGame()` et ajouter le bout de code pour lancer la musique (play).
