@@ -111,7 +111,7 @@ dead.xml
 
 ![dead human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/dead.PNG)
 
-Récupérez les fichiers depuis ce lien : https://git.io/vMleF, mettez les dans votre dossier Drawable et en utilisant un LinearLayout horizontal, alignez 5 copies de la ressource **human** de droite à gauche. Utilisez :
+Récupérez les fichiers depuis ce lien : https://git.io/vMleF, mettez les dans votre dossier **Drawable** et en utilisant un LinearLayout horizontal, alignez 5 copies de la ressource **human** de droite à gauche. Utilisez :
 >     [à copier dans colors.xml]
 >     
 >     <color name="iconColor">#000000</color>
@@ -124,6 +124,7 @@ Le resultat devrait ressembler à ça :
 
 ![mainActivity with Human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/humans.PNG)
 
+- Si vous n'arrivez pas à obtenir un resultat pareil : https://git.io/vMll7
 *NB: On n'a pas à inclure ces ressources en différentes tailles pour car ce sont des Vectors, donc redimensionnables dynamiquement.*
 
 
