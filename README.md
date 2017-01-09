@@ -66,7 +66,9 @@ Si vous n'avez pas d'inspiration, des ressources vous sont fournies à : https:/
 Comme chaque jeu qui se respecte on doit avoir des niveaux et un score. Pour cela :
 
 3. Personnalisez l’interface (xml) de votre jeu et rajoutez y une barre d'outils afin d'obtenir un écran comme indiqué si dessous:
+
     ![alt text](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/gameActivity.PNG "MainActivity")
+    
 Utilisez ces valeurs : 
 
 >     [à copier dans colors.xml]
@@ -93,9 +95,11 @@ Maintenant qu'on a personnalisé un peu l'interface de notre jeu, on passe à la
 
 Pour modéliser les humains on utilisera ces deux ressources/icônes du Material Design fournies par Google: 
 human.xml
+
 ![human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/human.PNG)
 
 dead.xml
+
 ![dead human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/dead.PNG)
 
 Récupérez les fichiers depuis ce lien : https://git.io/vMleF, mettez les dans votre dossier Drawable et en utilisant un LinearLayout horizontal, alignez 5 copies de la ressource **human** de droite à gauche. Utilisez :
@@ -108,6 +112,7 @@ Récupérez les fichiers depuis ce lien : https://git.io/vMleF, mettez les dans 
 >     <dimen name="icon_size">40dp</dimen>
 
 Le resultat devrait ressembler à ça :
+
 ![mainActivity with Human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/humans.PNG)
 
 *NB: On n'a pas à inclure ces ressources en différentes tailles pour car ce sont des Vectors, donc redimensionnables dynamiquement.*
