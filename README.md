@@ -144,14 +144,14 @@ Maintenant on est prêt pour créer notre objet Helicopter.
  - la hauteur en pixels absolus, aHeight: int
  3. Associez l'image à l'hélicoptère au moment de la création de l'objet, récupérez les dimensions relatives à l'écran sachant que Width = height / 2  et rajoutez-les à l'objet pour les mettre à l'échelle de l'écran à l'aide de cette ligne de code:
  
+ > `this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); `
+ 
 *NB: Vous pouvez mettre une couleur à votre image, Une idée simple serait d'attribuer des valeurs RGB aléatoires (0 - 255) ou de créer une liste statique des couleurs. Utilisez ce bout de code: *
 
 ```
         this.setImageResource(R.drawable.copter);
         this.setColorFilter(color, PorterDuff.Mode.MULTIPLY);
 ```
-
-> `this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); `
 
 Maintenant on peut créer des objets Helicopter et les ajouter à l'écran de l'application. Vous pouvez tester l'ajout des hélicoptères avec ce code: 
 
