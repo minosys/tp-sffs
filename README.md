@@ -162,7 +162,6 @@ Maintenant on est prêt pour créer notre objet Helicopter.
         int dpWidth = PixelHelper.pixelsToDp(aWidth, context);
 
         this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); 
-        setLayoutParams(params);
  ```
  
 *NB: Vous pouvez mettre une couleur à votre image, Une idée simple serait d'attribuer des valeurs RGB aléatoires (0 - 255) ou de créer une liste statique des couleurs. Utilisez ce bout de code: *
