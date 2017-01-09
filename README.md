@@ -149,7 +149,7 @@ Comme son nom l'indique, cette méthode reçoit le nombre de pixels absolus, une
 Maintenant on est prêt pour créer notre objet Helicopter.   
 
  1. Créez une classe Helicopter qui hérite de ImageView (Android.widget).
- 2. Créez un constructeur par défaut, et un constructeur qui reçoit : 
+ 2. Créez un constructeur qui prend le context en paramétres et qui le passe au constructeur parent, et un constructeur qui reçoit : 
      - le contexte où on rajoutera l'objet Helicopter,  context:Context 
      - la couleur de l'hélicoptère, couleur:int 
      - la hauteur en pixels absolus, aHeight: int
