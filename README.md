@@ -94,6 +94,7 @@ Utilisez ces valeurs :
 Maintenant qu'on a personnalisé un peu l'interface de notre jeu, on passe à la création des objets qu'on utilisera dans le jeu.
 
 Pour modéliser les humains on utilisera ces deux ressources/icônes du Material Design fournies par Google: 
+
 human.xml
 
 ![human](https://gitlab.insa-rennes.fr/mohammed-amine-alifdal/tp-android/raw/0042b02d8f098880b6e45ba9c1f0839c485bd3fe/captures/human.PNG)
@@ -142,6 +143,13 @@ Maintenant on est prêt pour créer notre objet Helicopter.
  - la couleur de l'hélicoptère, couleur:int 
  - la hauteur en pixels absolus, aHeight: int
  3. Associez l'image à l'hélicoptère au moment de la création de l'objet, récupérez les dimensions relatives à l'écran sachant que Width = height / 2  et rajoutez-les à l'objet pour les mettre à l'échelle de l'écran à l'aide de cette ligne de code:
+ 
+*NB: Vous pouvez mettre une couleur à votre image, Une idée simple serait d'attribuer des valeurs RGB aléatoires (0 - 255) ou de créer une liste statique des couleurs. Utilisez ce bout de code: *
+
+```
+        this.setImageResource(R.drawable.copter);
+        this.setColorFilter(color, PorterDuff.Mode.MULTIPLY);
+```
 
 > `this.setLayoutParams(new ViewGroup.LayoutParams(dpWidth, dpHeight)); `
 
@@ -162,12 +170,9 @@ Maintenant on peut créer des objets Helicopter et les ajouter à l'écran de l'
                 }
             });
 
-Allez-y faites un peu de coloriage. 
 
-*NB: Une idée simple serait d'attribuer des valeurs RGB aléatoires (0 - 255) ou de créer une liste statique des couleurs... (Innovez!)*  
 
-##### Une dose d’esthétisme
-//todo
+
 ----------
 
 
