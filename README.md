@@ -174,6 +174,9 @@ Maintenant on est prêt pour créer notre objet Helicopter.
 
 Maintenant on peut créer des objets Helicopter et les ajouter à l'écran de l'application. Vous pouvez tester l'ajout des hélicoptères avec ce code: 
 
+
+     mContentView = (ViewGroup) findViewById(R.id.activity_main);
+
      mContentView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View view, MotionEvent motionEvent) {
