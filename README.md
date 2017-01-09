@@ -150,9 +150,9 @@ Maintenant on est prêt pour créer notre objet Helicopter.
 
  1. Créez une classe Helicopter qui hérite de ImageView (Android.widget).
  2. Créez un constructeur par défaut, et un constructeur qui reçoit : 
- - le contexte où on rajoutera l'objet Helicopter,  context:Context 
- - la couleur de l'hélicoptère, couleur:int 
- - la hauteur en pixels absolus, aHeight: int
+     - le contexte où on rajoutera l'objet Helicopter,  context:Context 
+     - la couleur de l'hélicoptère, couleur:int 
+     - la hauteur en pixels absolus, aHeight: int
  3. Associez l'image à l'hélicoptère au moment de la création de l'objet, récupérez les dimensions relatives à l'écran sachant que Width = height / 2  et rajoutez-les à l'objet pour les mettre à l'échelle de l'écran à l'aide de cette ligne de code:
  
  ```
@@ -199,7 +199,7 @@ Maintenant on peut créer des objets Helicopter et les ajouter à l'écran de l'
 
 Pour pouvoir animer le mouvement des hélicoptères du bas vers le haut, on aura besoin d'implémenter l'animation dans chaque objet Helicopter.
 
-1. Commencer par implémenter les interfaces `Animator.AnimatorListener` et `valueAnimator.AnimatorUpdateListener` pour recevoir les `Callbacks` de chaque petit mouvement d'animation après qu'il soit calculé.
+1. Commencer par implémenter les interfaces `Animator.AnimatorListener` et `ValueAnimator.AnimatorUpdateListener` pour recevoir les `Callbacks` de chaque petit mouvement d'animation après qu'il soit calculé.
 2. Créer une méthode `launchHelicopter` avec comme paramètres la hauteur de l'écran (`screenHeight`) et la durée de l'animation (`duration`).
 2. Faites-nous une animation des hélicoptères avec un mouvement vertical du bas (`screenHeight`) vers le haut (`0f`).  
     - Utilisez un objet de type `ValueAnimator` (dans la classe) qui s'occupera de l'animation.
